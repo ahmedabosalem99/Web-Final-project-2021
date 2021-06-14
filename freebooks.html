@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Open Library</title>
+        <link rel="stylesheet" href="freebooks.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+        <script src="https://kit.fontawesome.com/3f4a81b702.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <link rel="icon" href="logo2.png" >
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <ul>
+                <a href="index.html" class="logo"><i class="fas fa-book-reader"></i></a>
+                <div class="main-menu" id="mylinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="freebooks.html">Samples</a></li>
+                    <li><a href="buybooks.html">Buy Books</a></li>
+                    <li><a href="topbooks.html">Top Books</a></li>
+                    <li><a class="register" href="registration.html"><i style="padding-right: 0.5rem;" class="fas fa-user"></i>Register</a></li>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-caret-square-down"></i></a>
+                    <a onclick="appear2()" class="signin" href="#signin">Sign in<i class="fas fa-sign-in-alt"></i></a>
+            </ul>
+        </header>
+        <section class="freebooks" id="section">
+            <h1 class="heading"><span class="free"><span class="f">F</span>ree </span><span class="sample"><span class="s">S</span>amples</span></h1>
+            <div class="books-container">
+                <h2><img src="productivity-icon.jpg">Productivity<i class="fas fa-chevron-circle-down" onclick="myFunction1()"></i></h2>
+                <div class="productivity" id="productivity">
+                   <div class="book" >
+                       <img src="productivity1.jpg" alt="Eat Move Sleep" >
+                       <button >Read</button>
+                   </div>
+                   <div class="book" >
+                    <img src="productivity2.jpg" alt="Finish" >
+                    <button>Read</button>
+                   </div>
+                   <div class="book" >
+                    <img src="productivity3.jpg" alt="Eat that frog" >
+                    <button>Read</button>
+                   </div>
+                   <div class="book" >
+                    <img src="productivity4.jpg" alt="solving procrastination puzzle " >
+                    <button>Read</button>
+                   </div>
+                   <div class="book" >
+                    <img src="productivity5.jpg" alt="The 5 seconds rule " >
+                    <button>Read</button>
+                   </div>
+                   <div class="book" >
+                    <img src="productivity6.jpg" alt="The One thing " >
+                    <button>Read</button>
+                   </div>
+                </div>
+                <h2><img src="habit-icon.jpg">Habits building<i class="fas fa-chevron-circle-down" onclick="myFunction2()"></i></h2>
+                <div class="habits" id="habits">
+                    <div class="book" >
+                        <img src="habits1.jpg" >
+                        <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="habits2.jpg"  >
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="habits3.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="habits4.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="habits5.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="habits6.jpg" >
+                     <button>Read</button>
+                    </div>
+                </div>
+                <h2><img src="skills-icon.jpg">Gaining skills<i class="fas fa-chevron-circle-down" onclick="myFunction3()"></i></h2>
+                <div class="skills" id="skills">
+                    <div class="book" >
+                        <img src="skills1.jpg" >
+                        <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="skills2.jpg"  >
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="skills3.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="skills4.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="skills5.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="skills6.jpg" >
+                     <button>Read</button>
+                    </div>
+                </div>
+                <h2><img src="artsoflife-icon.jpg">Arts Of Life<i class="fas fa-chevron-circle-down" onclick="myFunction4()"></i></h2>
+                <div class="arts" id="arts">
+                    <div class="book" >
+                        <img src="arts1.jpg" >
+                        <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="arts2.jpg"  >
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="arts3.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="arts4.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="arts5.jpg">
+                     <button>Read</button>
+                    </div>
+                    <div class="book" >
+                     <img src="arts6.jpg" >
+                     <button>Read</button>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        <footer class="footer-distributed" id="footer">
+
+			<div class="footer-right">
+
+				<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="index.html">Home</a>
+
+					<a href="freebooks.html">Free Samples</a>
+
+					<a href="buybooks.html">Buy</a>
+
+					<a href="topbooks.html">Top Books</a>
+
+					<a href="registration.html">Register</a>
+				</p>
+
+				<p>Open Library &copy; 2021</p>
+			</div>
+
+		</footer>
+        <section class="signin-form" id="signin-form">
+            <i  id ="exit" class="fas fa-times" onclick="hide2()" title="Press twice to 'exit'"></i>
+            <h1>Sign in to Open Library <a href="index.html" class="logo"><i class="fas fa-book-reader"></i></a></h1>
+              <form action="/index.html" method="post">
+                  <div class="container">
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button type="submit">Sign in</button>
+                    <label>
+                      <input type="checkbox"  name="remember" required> Remember me
+                    </label>
+                  </div>
+                  <div class="container">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    <span class="psw">You have no account! <a href="registration.html">Register</a></span>
+                </form>
+          </section>
+    </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Library</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+    <script src="https://kit.fontawesome.com/3f4a81b702.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="logo2.png" >
+</head>
+<body>
+    <header id="header">
+        <ul>
+            <a href="index.html" class="logo"><i class="fas fa-book-reader"></i></a>
+            <div class="main-menu" id="mylinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="freebooks.html">Samples</a></li>
+                <li><a href="buybooks.html">Buy Books</a></li>
+                <li><a href="topbooks.html">Top Books</a></li>
+                <li><a class="register" href="registration.html"><i style="padding-right: 0.5rem;" class="fas fa-user"></i>Register</a></li>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-caret-square-down"></i></a>
+                <a onclick="appear2()" class="signin" href="#signin">Sign in<i class="fas fa-sign-in-alt"></i></a>
+        </ul>
+    </header>
+    <section class="regi" id="section">
+        <h1 class="heading"><span class="free"><span class="f">R</span>egistration  </span><span class="sample"><span class="s">F</span>orm</span></h1>
+        <form  onsubmit="return formValiation()"  action="">
+            <div class="container">
+
+              <label for="infname">First Name</label>
+              <input  id ="infname" type="text" placeholder="Enter your First Name" required>
+                        
+              
+                <label for="inlname">Last Name</label>
+                <input  id ="inlname"type="text" placeholder="Enter your Last Name" required>
+
+              <label for="inemail">Email</label>
+              <input id="inemail" type="text" placeholder="Enter Email" name="email" 
+              pattern="[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,}$" onkeyup="checkmail(this)"
+                            title="someone@example.com"
+              required>
+              <error id="mailalert"></error>
+          
+              <label for="inpassword">Password</label>
+              <input id="inpassword"type="password" placeholder="Enter Password" name="psw" 
+              pattern="(?!.* )(?=.*[A-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}" title=" the password will be accepted only if
+              • the password must start with uppercase character.
+              • the password must include 8 characters no more no less.
+              • the password must include one digit at least.• the password must include one special character like -, _, #,
+              &, and *.
+              • No white spaces allowed in the password" onkeyup="checkpsw(this)"
+              required>
+                <error id="passalert"></error>
+                <error id="wspacesalert"></error>
+          
+              <label for="inpasswordrepeat">Repeat Password</label>
+              <input id="inpasswordrepeat" type="password" placeholder="Repeat Password" name="psw-repeat"
+              onkeyup="check(this)" required>
+              <error id="confirmalert"></error>
+
+              <label for="inphone">Phone Number</label> 
+              <input id="inphone" name="phonenumber" type="text"  placeholder="Enter your phone number" maxlength="11"
+              pattern="^01[0-2,5]\d{8}$" title="" onkeyup="checkphone(this)" required>
+              <error id="phone"></error>
+
+              <label for="inadress">Aderss</label> 
+              <textarea  id ="inadress" placeholder="Enter  your adress" name="address" rows="8" required></textarea>
+              <label for="ingender">Gender</label>
+              <select id="ingender" name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <br><br>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+              
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              <div class="clearfix">
+                <button type="submit" class="submitbtn">Submit</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+              </div>
+            </div>
+          </form>
+    </section>
+
+<footer class="footer-distributed" id="footer">
+
+    <div class="footer-right">
+
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a class="link-1" href="index.html">Home</a>
+
+					<a href="freebooks.html">Free Samples</a>
+
+					<a href="buybooks.html">Buy</a>
+
+					<a href="topbooks.html">Top Books</a>
+
+					<a href="registration.html">Register</a>
+
+        <p>Open Library &copy; 2021</p>
+    </div>
+    </footer>
+    <section class="signin-form" id="signin-form">
+        <i  id ="exit" class="fas fa-times" onclick="hide2()" title="Press twice to 'exit'"></i>
+        <h1>Sign in to Open Library <a href="index.html" class="logo"><i class="fas fa-book-reader"></i></a></h1>
+          <form action="/index.htmls" method="post">
+              <div class="container">
+                <label for="uname">Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                <label for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                <button type="submit">Sign in</button>
+                <label>
+                  <input type="checkbox"  name="remember" required> Remember me
+                </label>
+              </div>
+              <div class="container">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                <span class="psw">You have no account! <a href="registration.html">Register</a></span>
+            </form>
+      </section>
+    <script>
+        var cue = 1;
+        function checkpsw(elem) {
+            if (elem.value.length != 8) {
+                document.getElementById('passalert').innerText = "Must be 8 characters no more no less";
+            }
+            else {
+                document.getElementById('passalert').innerText = "";
+            }
+            if (elem.value.indexOf(' ') !== -1) {
+                document.getElementById('wspacesalert').innerText = "Must not contain White Spaces";
+            }
+            else {
+                document.getElementById('wspacesalert').innerText = " ";
+            }
+        }
+        function checkmail(elem) {
+            if (elem.value.indexOf(' ') !== -1) {
+                document.getElementById('mailalart').innerText = "Must not contain White Spaces";
+            }
+            else {
+                document.getElementById('mailalart').innerText = " ";
+            }
+        }
+
+        var password = document.getElementById('inpassword');
+        function check(elem) {
+
+            if (elem.value.length > 0) {
+                if (elem.value != password.value) {
+                    document.getElementById('confirmalert').innerText = "The two Passwords don't match";
+                    cue = 0
+                }
+                else {
+                    document.getElementById('confirmalert').innerText = "";
+                    cue = 1
+                }
+
+            }
+            else {
+                document.getElementById('confirmalert').innerText = "Please Enter Confirm Password";
+                cue = 0;
+            }
+
+        }
+        function formValiation() {
+            if (cue == 1) {
+                alert("Congratulations🖐☺️ \n Now, you have an account");
+                return true;
+            }
+
+            else
+                return false;
+        }
+        function checkphone(elem) {
+            if (elem.value.length != 11) {
+                document.getElementById('phone').innerText = "The phone number must be only 11 digits";
+            }
+            else {
+                document.getElementById('phone').innerText = "";
+            }
+        }
+    
+    </script>
+</body>
+</html>

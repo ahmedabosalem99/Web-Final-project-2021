@@ -1,0 +1,112 @@
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition:all .2s linear;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 20px;
+}
+.signin-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-color: #479999;
+ background-image: linear-gradient(#098585, #00dada);
+ background-size: cover;
+ flex-direction: column;
+}
+.signin-form #exit {
+position: absolute;
+color: white;
+font-size: 3rem;
+right: 2rem;
+top: 1rem;
+cursor: pointer;
+}
+.signin-form #exit:hover{
+  color:#f37e00;
+  transform: rotate(180deg);
+}
+.signin-form h1 {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+.signin-form h1 .logo {
+  color:#f37e00;
+  font-size: 5rem;
+  display: block;
+
+}
+.signin-form form {
+  padding: 0 35% 3.5%; 
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+.signin-form input[type=text], .signin-form input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3rem;
+  }
+  
+ .signin-form button {
+    background-color: #f37e00;
+    color: white;
+    font-size: 15px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3rem;
+    opacity: 0.9;
+  }
+  
+  
+  .signin-form .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f3f3f3;
+    color: black;
+  }
+  .signin-form button:hover {
+    opacity: 1;
+  }
+  
+  .signin-form .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  span.psw a {
+    color: rgb(0, 17, 252);
+  }
+  span.psw a:hover {
+    color: #f37e00;
+  }
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .signin-form .cancelbtn {
+       width: 100%;
+    }
+  }

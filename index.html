@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Open Library</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+        <script src="https://kit.fontawesome.com/3f4a81b702.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <link rel="icon" href="logo2.png" >
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <ul>
+                <a href="index.html" class="logo"><i class="fas fa-book-reader"></i><p>Open Library</p></a>
+                <div class="main-menu" id="mylinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="freebooks.html">Samples</a></li>
+                    <li><a href="buybooks.html">Buy Books</a></li>
+                    <li><a href="topbooks.html">Top Books</a></li>
+                    <li><a class="register" href="registration.html"><i style="padding-right: 0.5rem;" class="fas fa-user"></i>Register</a></li>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-caret-square-down"></i></a>
+                <a onclick="appear1()" class="signin" href="#signin">Sign in<i class="fas fa-sign-in-alt"></i></a>
+            </ul>
+        </header>
+        <div class="parent" id="parent">
+            <div class="content">
+                <h1>Read <span style="color: #ff8400;">!</span></h1>
+                <p>
+                    Your Lord has said in the beginning of his book: "read" </br>
+                    Is there a slow reader ? 
+                </p>
+                <a href="freebooks.html"><i style="padding-right: 3px;" class="fas fa-book"></i>Let's read</a>
+            </div>
+             <div class="image">
+                 <img src="2.png" style="width: 100%; height: 100%; display: block;">
+             </div>
+        </div>
+        <section class="signin-form" id="signin-form">
+            <i  id ="exit" class="fas fa-times" onclick="hide1()"></i>
+            <h1>Sign in to Open Library <a href="index.html" class="logo"><i class="fas fa-book-reader"></i></a></h1>
+              <form action="/index.html" method="post" >
+                  <div class="container">
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button type="submit">Sign in</button>
+                    <label>
+                      <input type="checkbox"  name="remember" required> Remember me
+                    </label>
+                  </div>
+                  <div class="container">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    <span class="psw">You have no account! <a href="registration.html">Register</a></span>
+                </form>
+          </section>
+    </body>
+</html>
